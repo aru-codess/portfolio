@@ -17,7 +17,11 @@ const config = withPWA({
 
   // ✅ REQUIRED for static export to GitHub Pages
   output: "export",
+
+  // ✅ ADD THIS: Disable image optimization for static export
+  images: {
+    unoptimized: true,
+  },
 });
 
 export default config;
-
