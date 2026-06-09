@@ -94,7 +94,7 @@ export default function Container(props: ContainerProps) {
 
   // handle theme toggle
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "dark";
+    const savedTheme = localStorage.getItem("theme") ?? "dark";
     const isDarkMode = savedTheme === "dark";
     setIsDark(isDarkMode);
 
